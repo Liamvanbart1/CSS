@@ -1,14 +1,9 @@
 Week 1 - Your plan
-- Your assignment choice, and the options
-you select.
+1. Modular control panel
+* Online video editor
+* Technieken: Nesting, :has, container queries, Filters, Masks,  
 
-- Which CSS techniques will you start with?
-  
 - Where do your (major) challenges lie?
-
+Interactieve elementen toevoegen zonder javascript
   
-- Include sketch(es) of your design.
 
-  
-- Perhaps also create an initial breakdown
-sketch.
