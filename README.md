@@ -9,21 +9,29 @@
     - `:has()`
     - Container queries
     - Filters & Masks
-4. **Animatie starten wanneer jij wil**
 
 ### ❓ Uitdagingen
-🚀 Interactieve elementen toevoegen zonder JavaScript
+🚀 Interactieve elementen toevoegen zonder JavaScript.  
+👨‍💻 Animatie starten en stoppen.
 
 ### 📸 Visuals
 ![Screenshot van voorbeeld](./img/Screenshot.png)  
+*Dit is een voorbeeld van de interface.*
+
 ![Eerste schets](./img/schets.jpg)  
-![Breakdown van interface](./img/breakdown.png)
+*Eerste schets van het ontwerp, met een ruwe indeling van de interface.*
+
+![Breakdown van interface](./img/breakdown.png)  
+*Breakdown van de interface, waarin de verschillende componenten worden geanalyseerd.*
+
+
 
 ---
 
 ## **Week 2 - Progress**
 ### 📌 Voortgang
 ![Eerste layout](./img/eerstelayout.png)
+*De eerste layout met css grid.*
 
 ### ✅ Wat ging goed?
 - Eerste ervaring met **CSS Grid**, al was `grid-template` en `grid-area` even wennen.
