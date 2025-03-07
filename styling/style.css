@@ -55,3 +55,7 @@ section:nth-last-of-type(3) {
     background-color: blue;
     grid-area: 2 / 6 / 3 / 7;
 }
+
+/*animation 2s infinite linear paused;*/
+
+/*animation-play-state: running;*/
