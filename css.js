@@ -2,7 +2,7 @@ const ranges = document.querySelectorAll('[type="range"]');
 
 const updateRange = range => {
     const rangeName = range.name;
-    const rangeValue = range.value * 10 + "vh"; // Convert to viewport height
+    const rangeValue = range.value + "em";
     document.documentElement.style.setProperty("--" + rangeName, rangeValue);
 }
 
