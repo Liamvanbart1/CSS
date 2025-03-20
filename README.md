@@ -47,31 +47,33 @@
 
 # **Week 3 - Progress** 🚀
 
-Nesting, 
-
 ## 📌 Voortgang
-Toon je vooruitgang met tekst, code en afbeeldingen.
+Deze week lag de focus op het verbeteren van de lay-out en het verder ontwikkelen van de responsiviteit van mijn project. Ik heb geprobeerd om de container queries verder te implementeren en de interactieve elementen te optimaliseren.
 
 ![Screenshot van de voortgang](./img/progress-week3.png)
 
 ## ✅ Wat ging goed?
-- Welke verbeteringen heb je gemaakt?
-- Welke technieken of methoden werkten zoals verwacht?
+- **Nesting:** Ik heb succesvol elementen genest in containers, wat het gemakkelijker maakte om flexibele en herbruikbare componenten te creëren. Dit zorgde voor een schonere structuur in de code.
+- **Container Queries:** De container queries werkten zoals verwacht om de lay-out aan te passen op basis van de grootte van de container. Dit maakte het ontwerp responsiever zonder afhankelijk te zijn van de viewportgrootte.
+- **Interactiviteit:** De animaties werkten goed, vooral de mogelijkheid om planeten in hun banen te laten draaien op basis van de interactie via de checkbox. Het gedrag was intuïtief en eenvoudig te begrijpen.
 
 ## ❌ Wat was uitdagend?
-- Waar liep je tegenaan?
-- Hoe heb je problemen aangepakt?
+- **Responsiviteit:** Het aanpassen van de lay-out op verschillende schermgroottes bleef een uitdaging. Sommige elementen gaven niet de verwachte resultaten, vooral als de container kleiner werd dan de minimale breedte. Dit zorgde voor een inconsistente weergave op mobiele apparaten.
+- **Gebruik van CSS-Variabelen:** Het werkte goed om CSS-variabelen voor dynamische waarden in te stellen, maar het was soms lastig om deze variabelen correct bij te werken binnen animaties. Ik moest extra aandacht besteden aan de timing en de volgorde van de animaties.
 
 ## 🔬 Experimenten die ‘faalden’
-- Wat heb je geprobeerd dat uiteindelijk niet werkte?
-- Wat heb je hiervan geleerd?
+- **Complexe Flexbox Layouts:** Mijn poging om complexere nested flexbox-lay-outs toe te passen voor responsieve kolommen faalde gedeeltelijk. De elementen gingen niet goed schalen op kleinere schermen. Uiteindelijk moest ik overschakelen op meer gestroomlijnde flexbox-oplossingen om de lay-out stabieler te maken.
+- **CSS-Variabelen in @keyframes:** Het gebruik van dynamische variabelen in `@keyframes` werkte niet zoals verwacht. Dit leidde tot onvoorspelbare animaties en moest handmatig worden aangepast.
 
 ## 💡 Nieuwe inzichten
-- Heb je beter inzicht gekregen in CSS of andere technieken?
-- Heb je wijzigingen doorgevoerd in je oorspronkelijke plan?
+- **CSS-Grid en Flexbox:** Ik heb geleerd dat Flexbox uitstekend werkt voor eenvoudige en een-dimensionale lay-outs, maar dat CSS Grid krachtiger is voor complexere, tweedimensionale lay-outs. Dit heeft mijn strategie voor het ontwerp beïnvloed, en ik ben van plan meer CSS Grid toe te passen voor de volgende fase.
+- **Container Queries:** De kracht van container queries ligt in het aanpassen van de lay-out op basis van de grootte van de container, niet de viewport. Dit heeft mijn perspectief op responsief ontwerp veranderd, omdat het nu mogelijk is om de stijl van elementen aan te passen zonder te vertrouwen op de algemene schermgrootte.
 
 ## 🚀 Uitdagingen voor volgende week
-- Wat moet je nog afronden of verbeteren?
+- **Verbeteren van Responsiviteit:** Ik moet nog verder werken aan de algehele responsiviteit van de lay-out, vooral voor kleinere schermformaten. Ik wil ook de implementatie van CSS Grid en container queries verder verkennen om een meer flexibele lay-out te verkrijgen.
+- **Optimalisatie van Animaties:** De animaties kunnen nog worden verbeterd, vooral wat betreft het gebruik van dynamische waarden en het verbeteren van de prestaties op mobiele apparaten.
+- **Toegankelijkheid:** Ik wil ook beginnen met het verbeteren van de toegankelijkheid van de interactieve elementen, zoals het toevoegen van toetsenbordnavigatie en ondersteuning voor schermlezers.
+
 
 # **Week 4 - Completion** 🎉
 
