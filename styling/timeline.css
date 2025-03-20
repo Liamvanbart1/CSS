@@ -1,166 +1,52 @@
-body {
-    background: radial-gradient(circle at bottom, #000a 10%, #000 80%), black;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    position: relative;
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* ✨ Starry Background */
-.stars {
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    pointer-events: none;
+/* Planet controls container */
+.planet-controls {
+    display: none;
+    margin-top: 20px;
 }
 
-/* Random Stars */
-.stars div {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    border-radius: 50%;
-    opacity: 0.3;
-    animation: twinkle 3s infinite alternate ease-in-out;
-}
-
-/* ✨ Twinkle Animation */
-@keyframes twinkle {
-    0% { opacity: 0.2; }
-    100% { opacity: 1; }
-}
-
-/* 🌞 The Sun */
-.sun {
-    width: 50px;
-    height: 50px;
-    background: radial-gradient(circle, yellow, orange, red);
-    border-radius: 50%;
-    position: absolute;
-    box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
-}
-
-/* PLANETS */
+/* Style for the planet labels */
 .planet {
-    position: absolute;
-    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    display: inline-block;
+    margin: 10px;
+    background-color: #ddd;
+    border-radius: 8px;
+    text-align: center;
+    width: 100px;
+    transition: background-color 0.3s ease;
 }
 
-/* Custom Properties for Planetary Motion */
-:root {
-    --speed-mercury: 3s;
-    --speed-venus: 5s;
-    --speed-earth: 8s;
-    --speed-mars: 12s;
-
-    --semi-major-mercury: 80px;
-    --semi-minor-mercury: 50px;
-
-    --semi-major-venus: 120px;
-    --semi-minor-venus: 70px;
-
-    --semi-major-earth: 180px;
-    --semi-minor-earth: 110px;
-
-    --semi-major-mars: 250px;
-    --semi-minor-mars: 150px;
-
-    --size-mercury: 8px;
-    --size-venus: 14px;
-    --size-earth: 16px;
-    --size-mars: 12px;
+.planet:hover {
+    background-color: #ccc;
 }
 
-/**********************/
-/* PLANETS STYLING & ANIMATION */
-/**********************/
-
-/* Mercury */
-.mercury {
-    width: var(--size-mercury);
-    height: var(--size-mercury);
-    background: gray;
-    box-shadow: 0 0 5px rgba(200, 200, 200, 0.8);
-    animation: elliptical-orbit var(--speed-mercury) linear infinite;
+/* Show the controls when the corresponding checkbox is checked */
+.planet-toggle:checked + .planet + .planet-controls {
+    display: block;
 }
 
-/* Venus */
-.venus {
-    width: var(--size-venus);
-    height: var(--size-venus);
-    background: orange;
-    box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
-    animation: elliptical-orbit var(--speed-venus) linear infinite;
+.planet-controls label {
+    display: block;
+    margin-top: 10px;
 }
 
-/* Earth */
-.earth {
-    width: var(--size-earth);
-    height: var(--size-earth);
-    background: blue;
-    box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
-    animation: elliptical-orbit var(--speed-earth) linear infinite;
+/* Styling for range inputs */
+.planet-controls input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
 }
 
-/* Mars */
-.mars {
-    width: var(--size-mars);
-    height: var(--size-mars);
-    background: red;
-    box-shadow: 0 0 7px rgba(255, 0, 0, 0.8);
-    animation: elliptical-orbit var(--speed-mars) linear infinite;
+/* Optional: add some space between each planet's control section */
+.planet-controls {
+    margin-top: 20px;
 }
-
-/* Elliptical Orbit Animation */
-@keyframes elliptical-orbit {
-    0% {
-        transform: translateX(var(--semi-major)) translateY(0);
-    }
-    25% {
-        transform: translateX(0) translateY(var(--semi-minor));
-    }
-    50% {
-        transform: translateX(calc(var(--semi-major) * -1)) translateY(0);
-    }
-    75% {
-        transform: translateX(0) translateY(calc(var(--semi-minor) * -1));
-    }
-    100% {
-        transform: translateX(var(--semi-major)) translateY(0);
-    }
-}
-
-/* Adjust Individual Orbits */
-.mercury {
-    --semi-major: var(--semi-major-mercury);
-    --semi-minor: var(--semi-minor-mercury);
-}
-
-.venus {
-    --semi-major: var(--semi-major-venus);
-    --semi-minor: var(--semi-minor-venus);
-}
-
-.earth {
-    --semi-major: var(--semi-major-earth);
-    --semi-minor: var(--semi-minor-earth);
-}
-
-.mars {
-    --semi-major: var(--semi-major-mars);
-    --semi-minor: var(--semi-minor-mars);
-}
-
-/* 🎇 Add a few static stars manually */
-.stars div:nth-child(1) { top: 10%; left: 20%; animation-duration: 2s; }
-.stars div:nth-child(2) { top: 30%; left: 50%; animation-duration: 3s; }
-.stars div:nth-child(3) { top: 70%; left: 80%; animation-duration: 2.5s; }
-.stars div:nth-child(4) { top: 40%; left: 10%; animation-duration: 4s; }
-.stars div:nth-child(5) { top: 85%; left: 60%; animation-duration: 2.8s; }
-.stars div:nth-child(6) { top: 60%; left: 90%; animation-duration: 3.5s; }
-.stars div:nth-child(7) { top: 20%; left: 75%; animation-duration: 2.3s; }
-.stars div:nth-child(8) { top: 50%; left: 30%; animation-duration: 3.2s; }

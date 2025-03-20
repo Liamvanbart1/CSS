@@ -23,15 +23,15 @@
     --snelheid-aarde: 8s;
     --snelheid-mars: 12s;
 
-    --afstand-mercury: 80px;
-    --afstand-venus: 120px;
-    --afstand-aarde: 180px;
-    --afstand-mars: 250px;
+    --afstand-mercury: 5em;
+    --afstand-venus: 7.5em;
+    --afstand-aarde: 11.25em;
+    --afstand-mars: 15.625em;
 
-    --grootte-mercury: 8px;
-    --grootte-venus: 14px;
-    --grootte-aarde: 16px;
-    --grootte-mars: 12px;
+    --grootte-mercury: 0.5em;
+    --grootte-venus: 0.875em;
+    --grootte-aarde: 1em;
+    --grootte-mars: 0.75em;
 
     --kleur-mercury: gray;
     --kleur-venus: orange;
@@ -69,20 +69,33 @@ article {
         grid-row: 1;
         grid-column: 1;
         transition: grid-template-columns 1s ease-in-out;
+
+        & ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            background-color: black;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+
+        & li {
+            aspect-ratio: 1 / 1;
+            border-radius: 50%;
+        }
+
         & section:first-of-type {
-            & ul {
-                width: 100%;
-                height: 100%;
-                display: flex;
-                background-color: black;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                list-style: none;
+            display: grid;
+            grid-template-columns: 1fr;
+            & form {
+                grid-row: 1;
+                grid-column: 1;
             }
-            & li {
-                aspect-ratio: 1 / 1;
-                border-radius: 50%;
+            & ul {
+                grid-row: 1;
+                grid-column: 1;
             }
             & li:first-of-type {
                 height: 50px;
@@ -90,52 +103,82 @@ article {
                 box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
             }
             & li:nth-of-type(2) {
-                height: var(--grootte-mercury);
-                --afstand: var(--afstand-mercury);
+                height: 0.5em;
+                --afstand: 5em;
                 background: var(--kleur-mercury);
                 box-shadow: 0 0 5px rgba(200, 200, 200, 0.8);
-                animation: orbit var(--snelheid-mercury) linear infinite;
+                animation: orbit 3s linear infinite;
+                animation-play-state: paused;
+                animation-fill-mode: both;
             }
             & li:nth-of-type(3) {
-                height: var(--grootte-aarde);
-                --afstand: var(--afstand-aarde);
+                height: 1em;
+                --afstand: 11.25em;
                 background: var(--kleur-aarde);
                 box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
-                animation: orbit var(--snelheid-aarde) linear infinite;
+                animation: orbit 8s linear infinite;
+                animation-play-state: paused;
+                animation-fill-mode: both;
             }
             & li:nth-of-type(4) {
-                height: var(--grootte-venus);
-                --afstand: var(--afstand-venus);
+                height: 0.875em;
+                --afstand: 7.5em;
                 background: var(--kleur-venus);
                 box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
-                animation: orbit var(--snelheid-venus) linear infinite;
+                animation: orbit 5s linear infinite;
+                animation-play-state: paused;
+                animation-fill-mode: both;
             }
             & li:nth-of-type(5) {
-                /*height: calc((--grootte-mars) * 1px);*/
-                height: calc(var(--grootte-mars) * 1px);
-                --afstand: var(--afstand-mars);
+                height: 0.75em;
+                --afstand: 15.625em;
                 background: var(--kleur-mars);
                 box-shadow: 0 0 7px rgba(255, 0, 0, 0.8);
-                animation: orbit var(--snelheid-mars) linear infinite;
+                animation: orbit 12s linear infinite;
+                animation-play-state: paused;
+                animation-fill-mode: both;
             }
-
+            body:has(input[type="checkbox"]:checked) & li {
+                animation-play-state: running;
+            }
         }
         & section:last-of-type {
-            & ul {
-                box-sizing: border-box;
-                list-style-type: none;
-                display: grid;
-                grid-template-columns: 1fr 0;
-                width: 100%;
-                height: 100%;
-                background-color: green;
-                padding: 1em;
+            & li:first-of-type {
+                height: 50px;
+                background: radial-gradient(circle, var(--eerste-kleur-zon), var(--tweede-kleur-zon));
+                box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
             }
-            & li {
-                margin: .5em;
-                width: calc(var(--width) * 1em);
-                height: calc(var(--height) * 1em);
-                background-color: red;
+            & li:nth-of-type(2) {
+                height: calc(var(--grootte-mercury) * 1em);
+                --afstand: calc(var(--afstand-mercury) * 1em);
+                background: var(--kleur-mercury);
+                box-shadow: 0 0 5px rgba(200, 200, 200, 0.8);
+                animation: orbit calc(var(--snelheid-mercury) * 1s) linear infinite;
+                animation-fill-mode: both;
+            }
+            & li:nth-of-type(3) {
+                height: calc(var(--grootte-aarde) * 1em);
+                --afstand: calc(var(--afstand-aarde) * 1em);
+                background: var(--kleur-aarde);
+                box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
+                animation: orbit calc(var(--snelheid-aarde) * 1s) linear infinite;
+                animation-fill-mode: both;
+            }
+            & li:nth-of-type(4) {
+                height: calc(var(--grootte-venus) * 1em);
+                --afstand: calc(var(--afstand-venus) * 1em);
+                background: var(--kleur-venus);
+                box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
+                animation: orbit calc(var(--snelheid-venus) * 1s) linear infinite;
+                animation-fill-mode: both;
+            }
+            & li:nth-of-type(5) {
+                height: calc(var(--grootte-mars) * 1em);
+                --afstand: calc(var(--afstand-mars) * 1em);
+                background: var(--kleur-mars);
+                box-shadow: 0 0 7px rgba(255, 0, 0, 0.8);
+                animation: orbit calc(var(--snelheid-mars) *1s) linear infinite;
+                animation-fill-mode: both;
             }
         }
     }
