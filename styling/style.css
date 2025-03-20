@@ -42,6 +42,7 @@
     --kleur-mars: red;
 
     --delay: 0;
+    --scale: 1;
 }
 
 
@@ -61,7 +62,6 @@ h1 {
     margin-top: 20px;
 }
 
-
 article {
     height: 100vh;
     display: grid;
@@ -73,6 +73,7 @@ article {
         min-width: 0px;
         overflow: hidden;
         transition: all 1s ease-out;
+        container-type: inline-size;
     }
 
     & div:first-of-type {
@@ -105,18 +106,21 @@ article {
             & form {
                 grid-row: 1;
                 grid-column: 1;
+                display: flex;
+                align-items: flex-end;
+
             }
             & ul {
                 grid-row: 1;
                 grid-column: 1;
             }
             & li:first-of-type {
-                height: 50px;
+                height: calc(3.125em * var(--scale));
                 background: radial-gradient(circle, var(--eerste-kleur-zon), var(--tweede-kleur-zon));
                 box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
             }
             & li:nth-of-type(2) {
-                height: 0.5em;
+                height: calc(0.5em * var(--scale));
                 --afstand: 5em;
                 background: var(--kleur-mercury);
                 box-shadow: 0 0 5px rgba(200, 200, 200, 0.8);
@@ -125,7 +129,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(3) {
-                height: 1em;
+                height: calc(1em * var(--scale));
                 --afstand: 11.25em;
                 background: var(--kleur-aarde);
                 box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
@@ -134,7 +138,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(4) {
-                height: 0.875em;
+                height: calc(0.875em * var(--scale));
                 --afstand: 7.5em;
                 background: var(--kleur-venus);
                 box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
@@ -143,7 +147,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(5) {
-                height: 0.75em;
+                height: calc(0.75em * var(--scale));
                 --afstand: 15.625em;
                 background: var(--kleur-mars);
                 box-shadow: 0 0 7px rgba(255, 0, 0, 0.8);
@@ -162,7 +166,7 @@ article {
                 box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
             }
             & li:nth-of-type(2) {
-                height: calc(var(--grootte-mercury) * 1em);
+                height: calc(var(--grootte-mercury) * var(--scale) * 1em);
                 --afstand: calc(var(--afstand-mercury) * 1em);
                 background: var(--kleur-mercury);
                 box-shadow: 0 0 5px rgba(200, 200, 200, 0.8);
@@ -172,7 +176,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(3) {
-                height: calc(var(--grootte-aarde) * 1em);
+                height: calc(var(--grootte-aarde) * var(--scale) * 1em);
                 --afstand: calc(var(--afstand-aarde) * 1em);
                 background: var(--kleur-aarde);
                 box-shadow: 0 0 10px rgba(0, 0, 255, 0.8);
@@ -182,7 +186,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(4) {
-                height: calc(var(--grootte-venus) * 1em);
+                height: calc(var(--grootte-venus) * var(--scale) * 1em);
                 --afstand: calc(var(--afstand-venus) * 1em);
                 background: var(--kleur-venus);
                 box-shadow: 0 0 8px rgba(255, 165, 0, 0.8);
@@ -192,7 +196,7 @@ article {
                 animation-fill-mode: both;
             }
             & li:nth-of-type(5) {
-                height: calc(var(--grootte-mars) * 1em);
+                height: calc(var(--grootte-mars) * var(--scale) * 1em);
                 --afstand: calc(var(--afstand-mars) * 1em);
                 background: var(--kleur-mars);
                 box-shadow: 0 0 7px rgba(255, 0, 0, 0.8);
@@ -301,12 +305,14 @@ article {
         align-self: start;
     }
     label {
-        input {
+        margin: .5em;
+        & input {
             background-color: red;
             padding: 1.5rem;
             appearance: none;
+            border-radius: 50%;
         }
-        input:checked {
+        & input:checked {
             background-color: lightgreen;
         }
     }
@@ -335,34 +341,23 @@ article {
     }
 }
 
+@container (max-width: 300px) {
+    ul {
+        --scale: 0.5; /* Scale to 0.5em when the section's width is less than 25vw */
+    }
+}
+
+@container (min-width: 300px) {
+    ul {
+        --scale: 1; /* Reset to 1em when the section's width is greater than or equal to 25vw */
+    }
+}
+
 
 
 
 /*https://www.w3schools.com/css/css_grid.asp*/
 
-/*animation 2s infinite linear paused;*/
-
-/*animation-play-state: running;*/
-
-/*css ceaser*/
-/*css linear*/
-
-
-
-
-.box {
-    height: 100px;
-    border-radius: 100%;
-    background: #f09;
-    animation: move 5s linear paused;
-    animation-fill-mode: both;
-    animation-delay: calc(var(--delay) * -5s);
-}
-/* The Range Input */
-
-body:has(input[type="checkbox"]:checked) .box {
-    animation-play-state: running;
-}
 
 
 @property --angle {
