@@ -343,13 +343,13 @@ article {
 
 @container (max-width: 300px) {
     ul {
-        --scale: 0.5; /* Scale to 0.5em when the section's width is less than 25vw */
+        --scale: 0.5;
     }
 }
 
 @container (min-width: 300px) {
     ul {
-        --scale: 1; /* Reset to 1em when the section's width is greater than or equal to 25vw */
+        --scale: 1;
     }
 }
 

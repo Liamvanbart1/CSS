@@ -112,6 +112,8 @@ Het eindresultaat is een CSS-gebaseerde lay-out die gebruik maakt van container 
 
 ## Bronnenlijst
 https://www.w3schools.com/css/css_grid.asp
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries?utm_source=chatgpt.com
+https://webdesign.tutsplus.com/how-to-use-css-variables-for-animation--cms-28868t?utm_source=chatgpt.com
 
 
 ### Code (Voorbeeld)
