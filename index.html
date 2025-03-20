@@ -8,36 +8,44 @@
 </head>
 <body>
 <article>
+    <nav>
+        <label>
+            <input type="radio" name="layout" value="yes" checked/>
+        </label>
+        <label>
+            <input type="radio" name="layout" value="no">
+        </label>
+    </nav>
     <div>
         <section>
             <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>5</li>
-                <li>6</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </ul>
         </section>
         <section>
-        <h2>test</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
         </section>
     </div>
     <div>
-        <section>Media browser</section>
         <section>
-            <label>
-            <input type="radio" name="layout" value="yes"> Yes
-            </label>
-            <label>
-                <input type="radio" name="layout" value="no"> No
-            </label>
+            <input type="range" min="0" max="1" value="0" step="0.01" name="delay">
+            <div>
+                <span></span> <span></span> <span></span> <span></span> <span></span>
+                <span></span> <span></span> <span></span> <span></span> <span></span>
+            </div>
         </section>
         <section>
-            <label>Height:</label>
-            <input type="range" min="1" max="10" step="1" value="5" name="height">
-            <label>Width:</label>
-            <input type="range" min="5" max="20" step="1" value="10" name="width">
+            <input type="range" min="1" max="30" value="12" step="1" name="grootte-mars">
         </section>
     </div>
 </article>

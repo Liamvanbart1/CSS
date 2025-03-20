@@ -47,6 +47,8 @@
 
 # **Week 3 - Progress** 🚀
 
+Nesting, 
+
 ## 📌 Voortgang
 Toon je vooruitgang met tekst, code en afbeeldingen.
 
