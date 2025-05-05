@@ -137,6 +137,7 @@ https://pixabay.com/nl/photos/mars-rode-planeet-planeet-de-ruimte-11012/
 https://pixabay.com/nl/photos/venus-oppervlakte-heet-warmte-11022/
 https://en.wikipedia.org/wiki/Mercury_(planet)
 https://codepen.io/web-dot-dev/pen/VwoBQjY
+https://pixabay.com/nl/photos/kosmos-milky-way-nacht-lucht-1853491/
 
 ### Code (Voorbeeld)
 
