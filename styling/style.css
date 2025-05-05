@@ -63,6 +63,8 @@ h1 {
   letter-spacing: 3px;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   margin-top: 20px;
+  z-index: 100;
+  animation: vliegenTitel 3s ease-in-out infinite;
 }
 
 article {
@@ -498,5 +500,33 @@ article {
       calc(var(--afstand) * cos(var(--angle))),
       calc(var(--afstand) * sin(var(--angle)))
     );
+  }
+}
+
+@keyframes vliegenTitel {
+  0% {
+    transform: scale(1) translateY(0) rotate(0deg);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 255, 255, 0.5);
+  }
+  25% {
+    transform: scale(1.1) translateY(-10px) rotate(10deg);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.7);
+  }
+  50% {
+    transform: scale(1.2) translateY(-15px) rotate(-10deg);
+    text-shadow: 0 0 30px rgba(255, 255, 255, 1),
+      0 0 50px rgba(255, 255, 255, 0.9);
+  }
+  75% {
+    transform: scale(1.1) translateY(-10px) rotate(5deg);
+    text-shadow: 0 0 20px rgba(255, 255, 255, 1),
+      0 0 40px rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    transform: scale(1) translateY(0) rotate(0deg);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+      0 0 30px rgba(255, 255, 255, 0.5);
   }
 }
