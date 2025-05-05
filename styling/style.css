@@ -241,7 +241,7 @@ article {
         grid-row: 1;
         grid-column: 1;
         touch-action: none;
-        -webkit-appearance: none;
+        appearance: none;
         width: 80%;
         padding: 0.5em 0;
         position: relative;
@@ -251,13 +251,13 @@ article {
         content: "";
         position: absolute;
         left: 0;
-        right: 0;
-        height: 0.5em;
+        right: -15px;
+        height: 1em;
         top: 2em;
         background-image: repeating-linear-gradient(
           to right,
-          black 0 1px,
-          transparent 0 calc((100% - 1em) / 20)
+          black 0 2px,
+          transparent 0 calc((100% - 1em) / 10)
         );
 
         background-size: calc(100% - 1em + 1px);
