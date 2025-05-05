@@ -57,17 +57,17 @@ _De eerste layout met css grid._
 
 ## 📌 Voortgang
 
-Deze week lag de focus op het verbeteren van de lay-out en het verder ontwikkelen van de responsiviteit. Ik heb erg veel nesting gebruikt tijdens het maken van de css door & te gebruiken dit zorgde ervoor dat ik verschillende styling kon gebruiken voor dezelfde elementen op andere plekken. In eerste instantie schreef ik de code gewoon met classes om te zien of dit werkte en dan vervolgens ging ik uitzoeken welke selectoren ik nodig had. Ik heb samen met een docent gekeken naar hoe ik de layout kon veranderen grid op basis van de breedte van het scherm met een media query. Ik wilde dit graag animeren en dat is uiteindelijk ook gelukt. Ook ben ik begonnen met de animaties en hoe ik deze met de player verder kan laten gaan/pauzeren.
+Deze week lag de focus op het verbeteren van de lay-out en het verder ontwikkelen van de responsiviteit. Ik heb erg veel nesting gebruikt tijdens het maken van de CSS door & te gebruiken. Dit zorgde ervoor dat ik verschillende styling kon gebruiken voor dezelfde elementen op andere plekken. In eerste instantie schreef ik de code gewoon met classes om te zien of dit werkte en dan ging ik vervolgens uitzoeken welke selectoren ik nodig had. Ik heb samen met een docent gekeken naar hoe ik de lay-out kon veranderen met grid op basis van de breedte van het scherm met een media query. Ik wilde dit graag animeren en dat is uiteindelijk ook gelukt. Ook ben ik begonnen met de animaties en hoe ik deze met de player verder kan laten gaan/pauzeren.
 
-Wat heb ik geleerd? Hoe handig grid eigenlijk is. Flexbox is makkelijk als je een simpele layout wil hebben maar wanneer het dynamisch moet zijn is grid toch wel echt handig.
+Wat heb ik geleerd? Hoe handig grid eigenlijk is. Flexbox is makkelijk als je een simpele lay-out wil hebben, maar wanneer het dynamisch moet zijn is grid toch wel echt handig.
 
 # **Week 4 - Completion**
 
-Het eindresusltaat was helaas niet helemaal zoals ik had gewild. Ik ben net te laat begonnen met de custom properties voor de animaties waardoor dit uiteindelijk ten koste ging van de styling van de rest van mijn pagina. Ik heb wel erg veel custom properties in combinatie met sinus en cosinus gebruikt om planeten en hun baan te animeren. Ik heb 1 standaard animatie gemaakt en 1 die de gebruiker kan aanpassen met sliders. Deze sliders bepalen de afstand grootte en snelheid van de planeten. Ik heb dit neergezet met details en summary's wat dus uiteindelijk niet heel mooi is gestyled. De animatie kan je verder afspelen door met een slider de animation-delay aan te passen.
+Het eindresultaat was helaas niet helemaal zoals ik had gewild. Ik ben net te laat begonnen met de custom properties voor de animaties, waardoor dit uiteindelijk ten koste ging van de styling van de rest van mijn pagina. Ik heb wel erg veel custom properties in combinatie met sinus en cosinus gebruikt om planeten en hun baan te animeren. Ik heb één standaard animatie gemaakt en één die de gebruiker kan aanpassen met sliders. Deze sliders bepalen de afstand, grootte en snelheid van de planeten. Ik heb dit neergezet met details en summary's, wat dus uiteindelijk niet heel mooi is gestyled. De animatie kan je verder afspelen door met een slider de animation-delay aan te passen.
 
 ### Herkansing
 
-Voor de herkansing heb ik gekeken naar de Feedback van Sanne. Ik heb de detail/summary's op een mooie manier gestyled via een tutorial die Sanne heeft gedeeld. Ik heb ook ipv een x aantal spannetjes onder de playbar gebruik gemaakt van een gradient background om de balkjes weer te geven. Ook heb ik gebruik gemaakt van Clamp om de grootte van de text in de UI aan te passen.
+Voor de herkansing heb ik gekeken naar de feedback van Sanne. Ik heb de detail/summary's op een mooie manier gestyled via een tutorial die Sanne heeft gedeeld. Ik heb ook i.p.v. een x aantal spannetjes onder de playbar gebruikgemaakt van een gradient background om de balkjes weer te geven. Ook heb ik gebruikgemaakt van clamp om de grootte van de tekst in de UI aan te passen. Ook heb ik mijn titel wat spectaculairder gemaakt.
 
 ## Bronnenlijst
 
