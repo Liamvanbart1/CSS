@@ -85,7 +85,7 @@ article {
       width: 100%;
       height: 100%;
       display: grid;
-      background-image: url("/img/Cosmos.jpg");
+      background-image: url("./img/Cosmos.jpg");
       /* https://pixabay.com/nl/photos/kosmos-milky-way-nacht-lucht-1853491/ */
       background-size: cover;
       background-position: center;
