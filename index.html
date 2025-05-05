@@ -57,85 +57,109 @@
           <h1>Liam Visuals</h1>
           <form>
             <fieldset>
-              <details>
-                <summary><legend>Aarde</legend></summary>
-                <label for="grootte-aarde" id="grootte-aarde"
-                  >Grootte Aarde</label
-                >
-                <input
-                  type="range"
-                  name="grootte-aarde"
-                  min="0.5"
-                  max="1.5"
-                  step="0.1"
-                  value="1"
-                />
-
-                <label for="afstand-aarde" id="afstand-aarde"
-                  >Afstand Aarde</label
-                >
-                <input
-                  type="range"
-                  name="afstand-aarde"
-                  min="7.5"
-                  max="15"
-                  step="0.5"
-                  value="11.25"
-                />
-
-                <label for="snelheid-aarde" id="snelheid-aarde"
-                  >Snelheid Aarde</label
-                >
-                <input
-                  type="range"
-                  name="snelheid-aarde"
-                  min="5"
-                  max="20"
-                  step="1"
-                  value="8"
-                />
+              <details name="planeten" open>
+                <summary>
+                  <legend>Aarde</legend>
+                  <img src="/img/Aarde.jpg" />
+                </summary>
+                <ul>
+                  <li>
+                    <label for="grootte-aarde" id="grootte-aarde"
+                      >Grootte Aarde</label
+                    >
+                    <input
+                      type="range"
+                      name="grootte-aarde"
+                      min="0.5"
+                      max="1.5"
+                      step="0.1"
+                      value="1"
+                    />
+                  </li>
+                  <li>
+                    <label for="afstand-aarde" id="afstand-aarde"
+                      >Afstand Aarde</label
+                    >
+                    <input
+                      type="range"
+                      name="afstand-aarde"
+                      min="7.5"
+                      max="15"
+                      step="0.5"
+                      value="11.25"
+                    />
+                  </li>
+                  <li>
+                    <label for="snelheid-aarde" id="snelheid-aarde"
+                      >Snelheid Aarde</label
+                    >
+                    <input
+                      type="range"
+                      name="snelheid-aarde"
+                      min="5"
+                      max="20"
+                      step="1"
+                      value="8"
+                    />
+                  </li>
+                </ul>
               </details>
             </fieldset>
             <fieldset>
-              <details>
-                <summary><legend>Mars</legend></summary>
-
-                <label for="grootte-mars" id="grootte-mars">Grootte Mars</label>
-                <input
-                  type="range"
-                  name="grootte-mars"
-                  min="0.2"
-                  max="3"
-                  step="0.1"
-                  value="0.75"
-                />
-
-                <label for="afstand-mars" id="afstand-mars">Afstand Mars</label>
-                <input
-                  type="range"
-                  name="afstand-mars"
-                  min="7"
-                  max="30"
-                  step="1"
-                  value="15.625"
-                />
-
-                <label for="snelheid-mars" id="snelheid-mars"
-                  >Snelheid Mars</label
-                >
-                <input
-                  type="range"
-                  name="snelheid-mars"
-                  min="8"
-                  max="50"
-                  step="1"
-                  value="12"
-                />
+              <details name="planeten">
+                <summary>
+                  <legend>Mars</legend>
+                  <img src="/img/Mars.jpg" />
+                </summary>
+                <ul>
+                  <li>
+                    <label for="grootte-mars" id="grootte-mars"
+                      >Grootte Mars</label
+                    >
+                    <input
+                      type="range"
+                      name="grootte-mars"
+                      min="0.2"
+                      max="3"
+                      step="0.1"
+                      value="0.75"
+                    />
+                  </li>
+                  <li>
+                    <label for="afstand-mars" id="afstand-mars"
+                      >Afstand Mars</label
+                    >
+                    <input
+                      type="range"
+                      name="afstand-mars"
+                      min="7"
+                      max="30"
+                      step="1"
+                      value="15.625"
+                    />
+                  </li>
+                  <li>
+                    <label for="snelheid-mars" id="snelheid-mars"
+                      >Snelheid Mars</label
+                    >
+                    <input
+                      type="range"
+                      name="snelheid-mars"
+                      min="8"
+                      max="50"
+                      step="1"
+                      value="12"
+                    />
+                  </li>
+                </ul>
               </details>
             </fieldset>
             <fieldset>
-              <details>
-                <summary><legend>Mercury</legend></summary>
+              <details name="planeten">
+                <summary>
+                  <legend>Mercury</legend>
+                  <img src="/img/Mercury.jpg" />
+                </summary>
                 <label for="grootte-mercury" id="grootte-mercury"
                   >Grootte Mercury</label
                 >
@@ -147,7 +171,6 @@
                   step="0.1"
                   value="0.5"
                 />
-
                 <label for="afstand-mercury" id="afstand-mercury"
                   >Afstand Mercury</label
                 >
@@ -159,7 +182,6 @@
                   step="1"
                   value="5"
                 />
-
                 <label for="snelheid-mercury" id="snelheid-mercury"
                   >Snelheid Mercury</label
                 >
@@ -174,9 +196,11 @@
               </details>
             </fieldset>
             <fieldset>
-              <details>
-                <summary><legend>Venus</legend></summary>
-
+              <details name="planeten">
+                <summary>
+                  <legend>Venus</legend>
+                  <img src="/img/Venus.jpg" />
+                </summary>
                 <label for="grootte-venus" id="grootte-venus"
                   >Grootte Venus</label
                 >
@@ -200,7 +224,6 @@
                   step="1"
                   value="7.5"
                 />
-
                 <label for="snelheid-venus" id="snelheid-venus"
                   >Snelheid Venus</label
                 >

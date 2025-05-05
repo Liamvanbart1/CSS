@@ -281,23 +281,6 @@ article {
         cursor: pointer;
         margin-top: -10px;
       }
-
-      & div {
-        grid-row: 1;
-        grid-column: 1;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 1.5em;
-        width: 80%;
-        pointer-events: none;
-
-        & span {
-          width: 2px;
-          height: 8px;
-          background: white;
-          opacity: 0.5;
-        }
-      }
     }
 
     & section:last-of-type {
@@ -308,16 +291,63 @@ article {
       align-items: center;
 
       & form {
-        width: 80%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        gap: 1rem;
+        /* width: min-content; */
         color: black;
       }
 
+      & details {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        z-index: 1;
+        height: 20rem;
+        border-radius: 2rem;
+        overflow: hidden;
+        background: transparent;
+      }
+      & details::marker {
+        display: none;
+        content: "";
+      }
+      & details summary {
+        padding: 1rem 1em;
+        width: 5rem;
+        flex-shrink: 0;
+        text-align: center;
+        cursor: pointer;
+      }
+      & details summary legend {
+        display: grid;
+        place-content: center;
+        width: 100%;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.25);
+      }
+      & details summary img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transition: filter o.5s ease;
+      }
+      & details[open] summary img {
+        filter: brightness(0.5);
+      }
+      & ul {
+        list-style-type: none;
+        padding: 1.5rem 1rem;
+        width: 300px;
+        color: wheat;
+      }
       & fieldset {
-        border: 2px solid #007bff;
-        border-radius: 8px;
-        background-color: #fff;
+        border: 0;
       }
     }
   }
