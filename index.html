@@ -1,115 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS to the rescue</title>
     <link rel="stylesheet" href="styling/style.css" />
-</head>
-<body>
-<article>
-    <nav>
+  </head>
+  <body>
+    <article>
+      <nav>
         <label>
-            <input type="radio" name="layout" value="yes" checked/>
+          <input type="radio" name="layout" value="yes" checked />
         </label>
         <label>
-            <input type="radio" name="layout" value="no">
+          <input type="radio" name="layout" value="no" />
         </label>
-    </nav>
-    <div>
+      </nav>
+      <div>
         <section>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <form>
-                <label for="animatie-toggle">
-                    <input type="checkbox" id="animatie-toggle" />
-                </label>
-            </form>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+          <form>
+            <label aria-label="play">
+              <input type="checkbox" />
+            </label>
+          </form>
         </section>
         <section>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </section>
-    </div>
-    <div>
+      </div>
+      <div>
         <section>
-            <input type="range" min="0" max="1" value="0" step="0.01" name="delay">
-            <div>
-                <span></span> <span></span> <span></span> <span></span> <span></span>
-                <span></span> <span></span> <span></span> <span></span> <span></span>
-            </div>
+          <input
+            type="range"
+            min="0"
+            max="1"
+            value="0"
+            step="0.01"
+            name="delay"
+          />
         </section>
         <section>
-            <h1>Liam Visuals</h1>
-            <form>
-                <fieldset>
-                    <details>
-                        <summary><legend>Aarde</legend></summary>
-                        <label for="grootte-aarde" id="grootte-aarde">Grootte Aarde</label>
-                        <input type="range" name="grootte-aarde" min="0.5" max="1.5" step="0.1" value="1" />
+          <h1>Liam Visuals</h1>
+          <form>
+            <fieldset>
+              <details>
+                <summary><legend>Aarde</legend></summary>
+                <label for="grootte-aarde" id="grootte-aarde"
+                  >Grootte Aarde</label
+                >
+                <input
+                  type="range"
+                  name="grootte-aarde"
+                  min="0.5"
+                  max="1.5"
+                  step="0.1"
+                  value="1"
+                />
 
-                        <label for="afstand-aarde" id="afstand-aarde">Afstand Aarde</label>
-                        <input type="range" name="afstand-aarde" min="7.5" max="15" step="0.5" value="11.25" />
+                <label for="afstand-aarde" id="afstand-aarde"
+                  >Afstand Aarde</label
+                >
+                <input
+                  type="range"
+                  name="afstand-aarde"
+                  min="7.5"
+                  max="15"
+                  step="0.5"
+                  value="11.25"
+                />
 
-                        <label for="snelheid-aarde" id="snelheid-aarde">Snelheid Aarde</label>
-                        <input type="range" name="snelheid-aarde" min="5" max="20" step="1" value="8" />
-                    </details>
-                </fieldset>
-                <fieldset>
-                    <details>
-                        <summary><legend>Mars</legend></summary>
+                <label for="snelheid-aarde" id="snelheid-aarde"
+                  >Snelheid Aarde</label
+                >
+                <input
+                  type="range"
+                  name="snelheid-aarde"
+                  min="5"
+                  max="20"
+                  step="1"
+                  value="8"
+                />
+              </details>
+            </fieldset>
+            <fieldset>
+              <details>
+                <summary><legend>Mars</legend></summary>
 
-                        <label for="grootte-mars" id="grootte-mars">Grootte Mars</label>
-                        <input type="range" name="grootte-mars" min="0.2" max="3" step="0.1" value="0.75" />
+                <label for="grootte-mars" id="grootte-mars">Grootte Mars</label>
+                <input
+                  type="range"
+                  name="grootte-mars"
+                  min="0.2"
+                  max="3"
+                  step="0.1"
+                  value="0.75"
+                />
 
-                        <label for="afstand-mars" id="afstand-mars">Afstand Mars</label>
-                        <input type="range" name="afstand-mars" min="7" max="30" step="1" value="15.625" />
+                <label for="afstand-mars" id="afstand-mars">Afstand Mars</label>
+                <input
+                  type="range"
+                  name="afstand-mars"
+                  min="7"
+                  max="30"
+                  step="1"
+                  value="15.625"
+                />
 
-                        <label for="snelheid-mars" id="snelheid-mars">Snelheid Mars</label>
-                        <input type="range" name="snelheid-mars" min="8" max="50" step="1" value="12" />
-                    </details>
-                </fieldset>
-                <fieldset>
-                    <details>
-                        <summary><legend>Mercury</legend></summary>
-                        <label for="grootte-mercury" id="grootte-mercury">Grootte Mercury</label>
-                        <input type="range" name="grootte-mercury" min="0.5" max="2" step="0.1" value="0.5" />
+                <label for="snelheid-mars" id="snelheid-mars"
+                  >Snelheid Mars</label
+                >
+                <input
+                  type="range"
+                  name="snelheid-mars"
+                  min="8"
+                  max="50"
+                  step="1"
+                  value="12"
+                />
+              </details>
+            </fieldset>
+            <fieldset>
+              <details>
+                <summary><legend>Mercury</legend></summary>
+                <label for="grootte-mercury" id="grootte-mercury"
+                  >Grootte Mercury</label
+                >
+                <input
+                  type="range"
+                  name="grootte-mercury"
+                  min="0.5"
+                  max="2"
+                  step="0.1"
+                  value="0.5"
+                />
 
-                        <label for="afstand-mercury" id="afstand-mercury">Afstand Mercury</label>
-                        <input type="range" name="afstand-mercury" min="4" max="14" step="1" value="5" />
+                <label for="afstand-mercury" id="afstand-mercury"
+                  >Afstand Mercury</label
+                >
+                <input
+                  type="range"
+                  name="afstand-mercury"
+                  min="4"
+                  max="14"
+                  step="1"
+                  value="5"
+                />
 
-                        <label for="snelheid-mercury" id="snelheid-mercury">Snelheid Mercury</label>
-                        <input type="range" name="snelheid-mercury" min="1" max="50" step="1" value="3" />
-                    </details>
-                </fieldset>
-                <fieldset>
-                    <details>
-                        <summary><legend>Venus</legend></summary>
+                <label for="snelheid-mercury" id="snelheid-mercury"
+                  >Snelheid Mercury</label
+                >
+                <input
+                  type="range"
+                  name="snelheid-mercury"
+                  min="1"
+                  max="50"
+                  step="1"
+                  value="3"
+                />
+              </details>
+            </fieldset>
+            <fieldset>
+              <details>
+                <summary><legend>Venus</legend></summary>
 
-                        <label for="grootte-venus" id="grootte-venus">Grootte Venus</label>
-                        <input type="range" name="grootte-venus" min="0.5" max="3" step="0.1" value="0.875" />
+                <label for="grootte-venus" id="grootte-venus"
+                  >Grootte Venus</label
+                >
+                <input
+                  type="range"
+                  name="grootte-venus"
+                  min="0.5"
+                  max="3"
+                  step="0.1"
+                  value="0.875"
+                />
 
-                        <label for="afstand-venus" id="afstand-venus">Afstand Venus</label>
-                        <input type="range" name="afstand-venus" min="1" max="18" step="1" value="7.5" />
+                <label for="afstand-venus" id="afstand-venus"
+                  >Afstand Venus</label
+                >
+                <input
+                  type="range"
+                  name="afstand-venus"
+                  min="1"
+                  max="18"
+                  step="1"
+                  value="7.5"
+                />
 
-                        <label for="snelheid-venus" id="snelheid-venus">Snelheid Venus</label>
-                        <input type="range" name="snelheid-venus" min="3" max="20" step="1" value="5" />
-                    </details>
-                </fieldset>
-            </form>
+                <label for="snelheid-venus" id="snelheid-venus"
+                  >Snelheid Venus</label
+                >
+                <input
+                  type="range"
+                  name="snelheid-venus"
+                  min="3"
+                  max="20"
+                  step="1"
+                  value="5"
+                />
+              </details>
+            </fieldset>
+          </form>
         </section>
-    </div>
-</article>
-<script src="css.js"></script>
-</body>
+      </div>
+    </article>
+    <script src="css.js"></script>
+  </body>
 </html>
