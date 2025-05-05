@@ -63,11 +63,11 @@ Wat heb ik geleerd? Hoe handig grid eigenlijk is. Flexbox is makkelijk als je ee
 
 # **Week 4 - Completion**
 
-Het eindresusltaat was helaas niet helemaal zoals ik had gewild. Ik ben net te laat begonnen met de custom properties voor de animaties waardoor dit uiteindelijk ten koste ging van de styling van de rest van mijn pagina.
+Het eindresusltaat was helaas niet helemaal zoals ik had gewild. Ik ben net te laat begonnen met de custom properties voor de animaties waardoor dit uiteindelijk ten koste ging van de styling van de rest van mijn pagina. Ik heb wel erg veel custom properties in combinatie met sinus en cosinus gebruikt om planeten en hun baan te animeren. Ik heb 1 standaard animatie gemaakt en 1 die de gebruiker kan aanpassen met sliders. Deze sliders bepalen de afstand grootte en snelheid van de planeten. Ik heb dit neergezet met details en summary's wat dus uiteindelijk niet heel mooi is gestyled. De animatie kan je verder afspelen door met een slider de animation-delay aan te passen.
 
-### Eindresultaat
+### Herkansing
 
-Het eindresultaat is een CSS-gebaseerde lay-out die gebruik maakt van container queries, custom properties (CSS-variabelen) en animaties om een interactieve en dynamische ervaring te creëren. Het doel was om een systeem te ontwerpen waarbij elementen (zoals planeten) op een gestileerde manier in een baan draaien, waarbij moderne CSS-technieken zoals container queries en custom media queries voor responsive design worden gebruikt.
+Voor de herkansing heb ik gekeken naar de Feedback van Sanne. Ik heb de detail/summary's op een mooie manier gestyled via een tutorial die Sanne heeft gedeeld. Ik heb ook ipv een x aantal spannetjes onder de playbar gebruik gemaakt van een gradient background om de balkjes weer te geven. Ook heb ik gebruik gemaakt van Clamp om de grootte van de text in de UI aan te passen.
 
 ## Bronnenlijst
 
