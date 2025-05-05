@@ -312,7 +312,7 @@ article {
         flex-direction: row;
         position: relative;
         z-index: 1;
-        height: 20rem;
+        height: 18rem;
         border-radius: 2rem;
         overflow: hidden;
         background: transparent;
@@ -333,7 +333,7 @@ article {
         display: grid;
         place-content: center;
         width: 100%;
-        font-size: 2.8vw;
+        font-size: clamp(0.8rem, 2.8vw, 2.5rem);
         margin: 0.1em;
       }
       & details summary img {
@@ -344,7 +344,7 @@ article {
         height: 100%;
         object-fit: cover;
         z-index: -1;
-        transition: filter o.5s ease;
+        transition: filter 0.5s ease;
       }
       & details[open] summary img {
         filter: brightness(0.5);
@@ -357,12 +357,12 @@ article {
 
       & ul li {
         margin-bottom: 1.5rem;
-        font-family: sans-serif;
       }
 
       & ul li label {
         display: block;
         margin-bottom: 0.5rem;
+        font-size: clamp(0.7rem, 2vw, 2rem);
       }
 
       & ul li input[type="range"] {
